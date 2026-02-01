@@ -1,14 +1,22 @@
 import { useState } from "react";
 
-export default function Counter() {
-    
-    let [count, setCount] = useState(0);
-    
-
-let incCount = () => {
-    setCount(count + 1)
+function init() {
+    console.log("init was executed");
+    return Math.random();
     
 }
+
+export default function Counter() {
+    
+    let [count, setCount] = useState(init);// initialization, setCount is asynchronous function
+    console.log("Component is rendered");
+    
+    
+    let incCount = () => {
+        setCount((currCount) => {
+            return currCount + 1;
+        });
+    }
 
     return (
     <div>
@@ -16,4 +24,4 @@ let incCount = () => {
         <button onClick={incCount}>Increase Count</button>
     </div>
     );
-}
+} 
