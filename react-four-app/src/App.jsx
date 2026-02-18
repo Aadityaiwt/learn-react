@@ -1,11 +1,12 @@
 import './App.css'
 import Form from '../Form'
 import Counter from '../Counter';
+import Jocker from '../Joker';
 
 
 function App() {
   return <>
-  <Counter />
+  <Jocker />
   </>;
 }
 export default App
