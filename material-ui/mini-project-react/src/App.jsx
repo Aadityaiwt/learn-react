@@ -1,16 +1,11 @@
 //import './App.css'
-import SearchBox from "../SearchBox";
-
-function btnClick() {
-
-}
-
+import WeatherApp from "../WeatherApp";
 
 function App() {
 
   return (
     <>
-      <SearchBox />
+      <WeatherApp />
     </>
   )
 }
