@@ -10,18 +10,17 @@ import {
   BsMenuButtonWideFill,
   BsFillGearFill
 } from "react-icons/bs";
-import "./App.css"
 
-const Sidebar = () => {
+const Sidebar = ({openSidebarToggle, OpenSidebar}) => {
   return (
-    <aside id="sidebar">
+    <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
 
         <div className="sidebar-title">
             <div className="sidebar-brand">
                 <BsCart3  className="icon icon_header"/> SHOP
             </div>
 
-            <span className="icon icon_close">X</span>
+            <span className="icon icon_close" onClick={OpenSidebar}>X</span>
         </div>
 
         <ul className="sidebar-list">
