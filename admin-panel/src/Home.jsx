@@ -30,7 +30,7 @@ const data = [
 ];
 
   return (
-    <main className="main-container">
+    <div className="main-container">
         <div className="main-title">
             <h3>DASHBOARD</h3>
         </div>
@@ -110,7 +110,7 @@ const data = [
             </LineChart>
             </ResponsiveContainer>
         </div>
-    </main>
+    </div>
   )
 }
 

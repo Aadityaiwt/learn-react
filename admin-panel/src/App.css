@@ -169,7 +169,7 @@ body {
 .card-inner > .card_icon {
     font-size: 25px;
 }
-
+    
 .charts {
   display: grid;
   grid-template-columns: 1fr 1fr;
